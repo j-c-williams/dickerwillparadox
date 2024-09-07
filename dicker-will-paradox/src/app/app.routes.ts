@@ -7,7 +7,8 @@ import { SoutheastComponent } from './southeast/southeast.component';
 import { NineteenNinetyFiveComponent } from './nineteen-ninety-five/nineteen-ninety-five.component';
 import { Rot14Component } from './rot14/rot14.component';
 import { ApolloComponent } from './apollo/apollo.component';
-import { EComponent } from './e/e.component';
+import { ZuckerComponent } from './zucker/zucker.component';
+
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -17,7 +18,7 @@ export const routes: Routes = [
   { path: '1995', component: NineteenNinetyFiveComponent },
   { path: 'rot14', component: Rot14Component },
   { path: 'apollo', component: ApolloComponent },
-  { path: 'e', component: EComponent },
+  { path: 'zucker', component: ZuckerComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EComponent } from './e.component';
+import { ZuckerComponent } from './zucker.component';
 
-describe('EComponent', () => {
-  let component: EComponent;
-  let fixture: ComponentFixture<EComponent>;
+describe('ZuckerComponent', () => {
+  let component: ZuckerComponent;
+  let fixture: ComponentFixture<ZuckerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EComponent]
+      imports: [ZuckerComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(EComponent);
+    fixture = TestBed.createComponent(ZuckerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

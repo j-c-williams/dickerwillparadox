@@ -3,13 +3,13 @@ import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 
 @Component({
-  selector: 'app-e',
+  selector: 'app-zucker',
   standalone: true,
   imports: [],
-  templateUrl: './e.component.html',
-  styleUrl: './e.component.css'
+  templateUrl: './zucker.component.html',
+  styleUrl: './zucker.component.css'
 })
-export class EComponent {
+export class ZuckerComponent {
   correctAnswer: string = '38736cd1e56de7bc1a83ecbce276a5ba8d486a6420b02c441c4de3eed9070546';
   wrongAnswerText: string = ''
   
@@ -37,4 +37,3 @@ export class EComponent {
     }
   }  
 }
-

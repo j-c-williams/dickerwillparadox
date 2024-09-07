@@ -29,7 +29,7 @@ export class ApolloComponent {
     this.wrongAnswerText = "";
     
     if (hashedInput === this.correctAnswer) {
-      this.router.navigate(['../e']);
+      this.router.navigate(['../zucker']);
     } else if (hashedInput === '7baa68f2418ba82d2545a780c00d7a8778249bbcdaf7369114534874ea6d3bd6') {
       this.wrongAnswerText = 'lol no but that would be funny'
     } else {
