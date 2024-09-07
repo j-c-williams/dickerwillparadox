@@ -1,7 +1,7 @@
 [build]
-  base = "dickerwillparadox"
+  base = "dicker-will-paradox"
   command = "npm run build"
-  publish = "dist/dickerwillparadox/browser"
+  publish = "dist/dicker-will-paradox/browser"
 
 [build.environment]
   NODE_VERSION = "20.17.0"
