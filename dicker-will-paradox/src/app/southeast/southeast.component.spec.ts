@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ZuckComponent } from './zuck.component';
+import { SoutheastComponent } from './southeast.component';
 
-describe('ZuckComponent', () => {
-  let component: ZuckComponent;
-  let fixture: ComponentFixture<ZuckComponent>;
+describe('SoutheastComponent', () => {
+  let component: SoutheastComponent;
+  let fixture: ComponentFixture<SoutheastComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ZuckComponent]
+      imports: [SoutheastComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ZuckComponent);
+    fixture = TestBed.createComponent(SoutheastComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
