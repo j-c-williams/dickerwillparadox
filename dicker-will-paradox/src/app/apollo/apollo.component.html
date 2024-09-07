@@ -1,0 +1,11 @@
+<div>
+    <h1 class="question-number">5</h1>
+    <p>What links him to Cory?</p>
+    <img src="../../images/cheerful.jpg" class="question-picture">
+    <div class="input-submit">
+      <input type="text" class="answer-input" placeholder="Your answer here..." #answerInput (keydown.enter)="checkAnswer(answerInput.value)">
+      <button class="submit-btn" (click)="checkAnswer(answerInput.value)">Submit</button>
+      <p class="wrong-answer-text">{{wrongAnswerText}}</p>
+    </div>
+  </div>
+  
