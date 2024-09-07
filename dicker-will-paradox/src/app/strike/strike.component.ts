@@ -29,7 +29,7 @@ export class StrikeComponent {
     this.wrongAnswerText = "";
     
     if (hashedInput === this.correctAnswer) {
-      this.router.navigate(['../landing']);
+      this.router.navigate(['../southeast']);
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }
