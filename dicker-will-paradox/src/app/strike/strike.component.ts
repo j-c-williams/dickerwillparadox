@@ -3,14 +3,14 @@ import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 
 @Component({
-  selector: 'app-the-maker',
+  selector: 'app-strike',
   standalone: true,
   imports: [],
-  templateUrl: './the-maker.component.html',
-  styleUrl: './the-maker.component.css'
+  templateUrl: './strike.component.html',
+  styleUrl: './strike.component.css'
 })
-export class TheMakerComponent {
-  correctAnswer: string = '7de2b63db2696e27faf1b381cd30c83fdddc89dc4d6aa7f21d1900fe3bdf8a32';
+export class StrikeComponent {
+  correctAnswer: string = 'db78e454b34bf038335a67f11c370a872d2a4e4037b3d202e69617b658b881ec';
   wrongAnswerText: string = ''
   
   @ViewChild('answerInput') answerInput!: ElementRef;
@@ -28,11 +28,10 @@ export class TheMakerComponent {
     const hashedInput = CryptoJS.SHA256(sanitizedInput).toString(CryptoJS.enc.Hex);
     this.wrongAnswerText = "";
     
-    if (hashedInput === this.correctAnswer || hashedInput === 'ca6b085cd219df225ad5d78c0351bd5b714f062786c473d474bab4d6ce2db7fb' || hashedInput === '53aa8ee216324262c38b6ecea6f79ae9251632f5dead0cb50240c036ae362cf7') {
-      this.router.navigate(['../farrier']);
+    if (hashedInput === this.correctAnswer) {
+      this.router.navigate(['../landing']);
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }
   }  
 }
-

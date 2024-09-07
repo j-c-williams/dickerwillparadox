@@ -10,7 +10,7 @@ export class LandingComponent {
   constructor(private router: Router) {}
 
   startGame(): void {
-    this.router.navigate(['/yuba']);
+    this.router.navigate(['/strike']);
   }
 
   sendToLeaderboard(): void {

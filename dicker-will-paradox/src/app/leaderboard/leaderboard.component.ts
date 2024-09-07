@@ -12,6 +12,6 @@ export class LeaderboardComponent {
   constructor(private router: Router) {}
   
   restartGame() {
-    this.router.navigate(['../yuba'])
+    this.router.navigate(['../strike'])
   }
 }
