@@ -10,7 +10,7 @@ import * as CryptoJS from 'crypto-js';
   styleUrl: './nineteen-ninety-five.component.css'
 })
 export class NineteenNinetyFiveComponent {
-  correctAnswer: string = 'f15c16b99f82d8201767d3a841ff40849c8a1b812ffbfd2e393d2b6aa6682a6e';
+  correctAnswer: string = 'b82e723b461323374c1eec211e066dc7a1c2130fe36c906e4bec5cc45109c248';
   wrongAnswerText: string = ''
   
   @ViewChild('answerInput') answerInput!: ElementRef;

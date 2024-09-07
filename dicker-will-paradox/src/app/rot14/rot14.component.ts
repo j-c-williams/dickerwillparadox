@@ -10,7 +10,7 @@ import * as CryptoJS from 'crypto-js';
   styleUrl: './rot14.component.css'
 })
 export class Rot14Component {
-  correctAnswer: string = '9409d68826fdb81945b7ffc4c8821e20da61464be2b738b910c834bd06eba39b';
+  correctAnswer: string = 'f15c16b99f82d8201767d3a841ff40849c8a1b812ffbfd2e393d2b6aa6682a6e';
   wrongAnswerText: string = ''
   
   @ViewChild('answerInput') answerInput!: ElementRef;
@@ -29,7 +29,7 @@ export class Rot14Component {
     this.wrongAnswerText = "";
     
     if (hashedInput === this.correctAnswer) {
-      this.router.navigate(['../']);
+      this.router.navigate(['../apollo']);
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }
