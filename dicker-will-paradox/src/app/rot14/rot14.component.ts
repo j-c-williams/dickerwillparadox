@@ -3,14 +3,14 @@ import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 
 @Component({
-  selector: 'app-nineteen-ninety-five',
+  selector: 'app-rot14',
   standalone: true,
   imports: [],
-  templateUrl: './nineteen-ninety-five.component.html',
-  styleUrl: './nineteen-ninety-five.component.css'
+  templateUrl: './rot14.component.html',
+  styleUrl: './rot14.component.css'
 })
-export class NineteenNinetyFiveComponent {
-  correctAnswer: string = 'f15c16b99f82d8201767d3a841ff40849c8a1b812ffbfd2e393d2b6aa6682a6e';
+export class Rot14Component {
+  correctAnswer: string = '9409d68826fdb81945b7ffc4c8821e20da61464be2b738b910c834bd06eba39b';
   wrongAnswerText: string = ''
   
   @ViewChild('answerInput') answerInput!: ElementRef;
@@ -29,7 +29,7 @@ export class NineteenNinetyFiveComponent {
     this.wrongAnswerText = "";
     
     if (hashedInput === this.correctAnswer) {
-      this.router.navigate(['../rot14']);
+      this.router.navigate(['../']);
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }
