@@ -29,7 +29,7 @@ export class SoutheastComponent {
     this.wrongAnswerText = "";
     
     if (hashedInput === this.correctAnswer) {
-      this.router.navigate(['../1995']);
+      this.router.navigate(['../1955']);
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }
