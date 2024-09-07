@@ -6,6 +6,7 @@ import { StrikeComponent } from './strike/strike.component';
 import { SoutheastComponent } from './southeast/southeast.component';
 import { NineteenNinetyFiveComponent } from './nineteen-ninety-five/nineteen-ninety-five.component';
 import { Rot14Component } from './rot14/rot14.component';
+import { ApolloComponent } from './apollo/apollo.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -14,6 +15,7 @@ export const routes: Routes = [
   { path: 'southeast', component: SoutheastComponent },
   { path: '1995', component: NineteenNinetyFiveComponent },
   { path: 'rot14', component: Rot14Component },
+  { path: 'apollo', component: ApolloComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
