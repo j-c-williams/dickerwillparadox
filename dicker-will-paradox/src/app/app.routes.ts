@@ -4,12 +4,14 @@ import { LandingComponent } from './landing/landing.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { StrikeComponent } from './strike/strike.component';
 import { SoutheastComponent } from './southeast/southeast.component';
+import { NineteenNinetyFiveComponent } from './nineteen-ninety-five/nineteen-ninety-five.component';
 
 export const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'leaderboard', component: LeaderboardComponent },
   { path: 'strike', component: StrikeComponent },
   { path: 'southeast', component: SoutheastComponent },
+  { path: '1995', component: NineteenNinetyFiveComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
