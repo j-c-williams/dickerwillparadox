@@ -15,7 +15,7 @@ export const routes: Routes = [
   { path: 'leaderboard', component: LeaderboardComponent },
   { path: 'strike', component: StrikeComponent },
   { path: 'southeast', component: SoutheastComponent },
-  { path: '1995', component: NineteenNinetyFiveComponent },
+  { path: '1955', component: NineteenNinetyFiveComponent },
   { path: 'rot14', component: Rot14Component },
   { path: 'apollo', component: ApolloComponent },
   { path: 'zucker', component: ZuckerComponent },
