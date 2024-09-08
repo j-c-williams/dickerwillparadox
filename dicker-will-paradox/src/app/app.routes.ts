@@ -9,6 +9,7 @@ import { Rot14Component } from './rot14/rot14.component';
 import { ApolloComponent } from './apollo/apollo.component';
 import { ZuckerComponent } from './zucker/zucker.component';
 import { LookComponent } from './look/look.component';
+import { ChickenComponent } from './chicken/chicken.component';
 
 
 export const routes: Routes = [
@@ -21,6 +22,7 @@ export const routes: Routes = [
   { path: 'apollo', component: ApolloComponent },
   { path: 'zucker', component: ZuckerComponent },
   { path: 'look', component: LookComponent },
+  { path: 'chicken', component: ChickenComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
