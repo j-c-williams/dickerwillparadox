@@ -3,14 +3,14 @@ import { Router } from '@angular/router';
 import * as CryptoJS from 'crypto-js';
 
 @Component({
-  selector: 'app-zucker',
+  selector: 'app-look',
   standalone: true,
   imports: [],
-  templateUrl: './zucker.component.html',
-  styleUrl: './zucker.component.css'
+  templateUrl: './look.component.html',
+  styleUrl: './look.component.css'
 })
-export class ZuckerComponent {
-  correctAnswer: string = '38736cd1e56de7bc1a83ecbce276a5ba8d486a6420b02c441c4de3eed9070546';
+export class LookComponent {
+  correctAnswer: string = '9628da467e8546f410babd58cb723e251ac177e5abdedcd99c75751fd46e86c3';
   wrongAnswerText: string = ''
   
   @ViewChild('answerInput') answerInput!: ElementRef;
@@ -28,10 +28,8 @@ export class ZuckerComponent {
     const hashedInput = CryptoJS.SHA256(sanitizedInput).toString(CryptoJS.enc.Hex);
     this.wrongAnswerText = "";
     
-    if (hashedInput === this.correctAnswer || hashedInput === 'f775b1b03b0f00dd8b29eb30c2af5883bf328b8192797345a68a384e966327a4') {
-      this.router.navigate(['../look']);
-    } else if (hashedInput === 'b0b17893a51343979e2090deee730538430cff2a88498e3885eb0ba179c58b6b' || hashedInput === 'ba605542cf569294fa14a3942c52231be9d3c3cf6267351a86ed58232b99a081') {
-      this.wrongAnswerText = "Technically yes, but not the answer I'm looking for"
+    if (hashedInput === this.correctAnswer || hashedInput === '3f0dcb460750b46cc5ed95bf5b29bfb67ce3d561a2e4251fb316420f123acd0c') {
+      this.router.navigate(['../']);
     } else {
       this.wrongAnswerText = 'Nope, try again';
     }
