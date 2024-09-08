@@ -8,6 +8,7 @@ import { NineteenNinetyFiveComponent } from './nineteen-ninety-five/nineteen-nin
 import { Rot14Component } from './rot14/rot14.component';
 import { ApolloComponent } from './apollo/apollo.component';
 import { ZuckerComponent } from './zucker/zucker.component';
+import { LookComponent } from './look/look.component';
 
 
 export const routes: Routes = [
@@ -19,6 +20,7 @@ export const routes: Routes = [
   { path: 'rot14', component: Rot14Component },
   { path: 'apollo', component: ApolloComponent },
   { path: 'zucker', component: ZuckerComponent },
+  { path: 'look', component: LookComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
