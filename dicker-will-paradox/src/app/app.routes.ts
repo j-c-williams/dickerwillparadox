@@ -10,6 +10,7 @@ import { ApolloComponent } from './apollo/apollo.component';
 import { ZuckerComponent } from './zucker/zucker.component';
 import { LookComponent } from './look/look.component';
 import { ChickenComponent } from './chicken/chicken.component';
+import { PastComponent } from './past/past.component';
 
 
 export const routes: Routes = [
@@ -23,6 +24,7 @@ export const routes: Routes = [
   { path: 'zucker', component: ZuckerComponent },
   { path: 'look', component: LookComponent },
   { path: 'chicken', component: ChickenComponent },
+  { path: 'past', component: PastComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
