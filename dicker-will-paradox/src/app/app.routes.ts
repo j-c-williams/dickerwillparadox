@@ -11,6 +11,8 @@ import { ZuckerComponent } from './zucker/zucker.component';
 import { LookComponent } from './look/look.component';
 import { ChickenComponent } from './chicken/chicken.component';
 import { PastComponent } from './past/past.component';
+import { TianaComponent } from './tiana/tiana.component';
+import { FinComponent } from './fin/fin.component';
 
 
 export const routes: Routes = [
@@ -25,6 +27,8 @@ export const routes: Routes = [
   { path: 'look', component: LookComponent },
   { path: 'chicken', component: ChickenComponent },
   { path: 'past', component: PastComponent },
+  { path: 'tiana', component: TianaComponent },
+  { path: 'fin', component: FinComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
