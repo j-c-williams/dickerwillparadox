@@ -5,7 +5,6 @@
     <div class="input-submit">
       <input type="text" class="answer-input" placeholder="Your answer here..." #answerInput (keydown.enter)="checkAnswer(answerInput.value)">
       <button class="submit-btn" (click)="checkAnswer(answerInput.value)">Submit</button>
-      <p class="hint">Just the state</p>
       <p class="wrong-answer-text">{{wrongAnswerText}}</p>
     </div>
   </div>
